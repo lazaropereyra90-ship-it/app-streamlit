@@ -51,7 +51,7 @@ def _first_existing(paths):
             return p
     return None
 
-FAVICON_PATH = _first_existing([os.path.join(_ASSETS_LOCAL, "logo_ip.png"), _LOGO_FALLBACKS[3], _LOGO_FALLBACKS[4]])
+FAVICON_PATH = "favicon.png"
 
 st.set_page_config(
     page_title="Gestión de Deuda · Municipalidad GLM",
