@@ -254,7 +254,7 @@ NUMERIC_COLS_BASE = ["CAPITAL", "INTERÉS", "DEUDA TOTAL", "MULTA"]
 DATE_NOTIF_COLS = ["NOTIF. LEGAL", "NOTIF. CÉDULA", "CARTA DOC."]
 STATE_FILE = "gestion_deuda_state.pkl"
 LOGO_PATH = "logo.png"
-LOGO_IP_PATH = None
+LOGO_IP_PATH = "favicon.png"
 
 OFICINA_MEMBRETE = (
     "Oficina de Ingresos Públicos\n"
