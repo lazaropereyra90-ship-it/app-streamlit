@@ -840,12 +840,12 @@ def merge_gestion(df_datos: pd.DataFrame, df_gestion_existing: pd.DataFrame) -> 
     ex2 = normalize_numeric_columns(ex2, ["CAPITAL", "INTERÉS", "DEUDA TOTAL"])
     # Cambiar a Regularizado cuando la deuda sea 0
     ex2.loc[
-    (pd.to_numeric(ex2["DEUDA TOTAL"], errors="coerce").fillna(0) == 0) &
-    (ex2["ESTADO GESTIÓN"] != "Regularizado"),
-    "ESTADO GESTIÓN"
-] = "Regularizado"
+        (pd.to_numeric(ex2["DEUDA TOTAL"], errors="coerce").fillna(0) == 0) &
+        (ex2["ESTADO GESTIÓN"] != "Regularizado"),
+        "ESTADO GESTIÓN"
+    ] = "Regularizado"
 
-return order_gestion_df(ex2)
+    return order_gestion_df(ex2)
 
 
 # ─── SIDEBAR ──────────────────────────────────────────────────────────────────
