@@ -837,7 +837,7 @@ def merge_gestion(df_datos: pd.DataFrame, df_gestion_existing: pd.DataFrame) -> 
             })
         ex2 = pd.concat([ex2, pd.DataFrame(new_rows)], ignore_index=True)
 
-    return order_gestion_df(normalize_numeric_columns(ex2, ["CAPITAL", "INTERÉS", "DEUDA TOTAL"]))
+    ex2 = normalize_numeric_columns(ex2, ["CAPITAL", "INTERÉS", "DEUDA TOTAL"])
     # Cambiar a Regularizado cuando la deuda sea 0
     ex2.loc[
     (pd.to_numeric(ex2["DEUDA TOTAL"], errors="coerce").fillna(0) == 0) &
