@@ -844,7 +844,7 @@ def merge_gestion(df_datos: pd.DataFrame, df_gestion_existing: pd.DataFrame) -> 
 init_state()
 
 with st.sidebar:
-    if os.path.exists(LOGO_PATH):
+    if LOGO_PATH and os.path.exists(LOGO_PATH):
         c_logo1, c_logo2, c_logo3 = st.columns([1, 2, 1])
         with c_logo2:
             st.image(LOGO_PATH, width=130)
