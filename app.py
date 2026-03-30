@@ -253,8 +253,8 @@ YES_VALUES = {"Sí", "Si", "si", "sí", "1", "True", "true", "SÍ", "SI"}
 NUMERIC_COLS_BASE = ["CAPITAL", "INTERÉS", "DEUDA TOTAL", "MULTA"]
 DATE_NOTIF_COLS = ["NOTIF. LEGAL", "NOTIF. CÉDULA", "CARTA DOC."]
 STATE_FILE = "gestion_deuda_state.pkl"
-LOGO_PATH = _first_existing([_LOGO_FALLBACKS[0], _LOGO_FALLBACKS[2]])
-LOGO_IP_PATH = _first_existing([_LOGO_FALLBACKS[1], _LOGO_FALLBACKS[3], _LOGO_FALLBACKS[4]])
+LOGO_PATH = "logo.png"
+LOGO_IP_PATH = None
 
 OFICINA_MEMBRETE = (
     "Oficina de Ingresos Públicos\n"
